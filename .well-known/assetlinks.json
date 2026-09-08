@@ -1,8 +1,11 @@
 [{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.environe21_code.blockchase",
-        "sha256_cert_fingerprints": ["85:5D:11:08:93:01:3C:3B:4E:75:AD:38:B7:44:5D:E1:33:47:60:F5:52:43:0F:D4:38:51:C4:7E:58:4C:39:A0"]
-      }
-    }]
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.environe21_code.blockchase",
+    "sha256_cert_fingerprints": [
+      "85:5D:11:08:93:01:3C:3B:4E:75:AD:38:B7:44:5D:E1:33:47:60:F5:52:43:0F:D4:38:51:C4:7E:58:4C:39:A0",
+      "FD:30:2A:26:66:BF:67:52:D7:3F:7B:57:19:22:3A:C5:39:F6:95:25:47:81:48:C3:B4:DC:16:2F:D8:38:34:04"
+    ]
+  }
+}]
