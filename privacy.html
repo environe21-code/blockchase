@@ -16,28 +16,34 @@
 <body>
 
 <h1>블록체이스(BLOCK CHASE) 개인정보처리방침</h1>
-<p class="meta">개발자: Chae Lab · 앱 패키지: io.github.environe21_code.blockchase · 시행일: 2026년 9월 30일</p>
+<p class="meta">개발자: Chae Lab · 앱 패키지: io.github.environe21_code.blockchase · 시행일: 2026년 10월 1일 (2026년 9월 30일 제정, 던전 갤러리 공개 기능 반영 개정)</p>
 
 <p>Chae Lab(이하 "개발자")은 모바일 퍼즐 게임 <strong>블록체이스(BLOCK CHASE)</strong>(이하 "앱")를 제공하면서 이용자의 개인정보를 소중히 다루며, 관련 법령을 준수합니다. 이 방침은 앱이 어떤 정보를 어떤 목적으로 수집·보관하는지, 이용자가 어떻게 삭제를 요청할 수 있는지를 설명합니다.</p>
 
 <h2>1. 수집하는 정보</h2>
-<p>앱은 층별 난이도 통계와 "지하 200층 정복자" 순번 기능을 제공하기 위해 아래 정보만을 수집합니다. 회원가입, 이메일, 전화번호, 위치, 연락처, 사진 등은 <strong>수집하지 않습니다.</strong></p>
+<p>앱은 층별 난이도 통계, "지하 200층 정복자" 순번, 그리고 <strong>던전 갤러리</strong>(이용자가 만든 던전을 다른 이용자에게 공개하는 기능)를 제공하기 위해 아래 정보만을 수집합니다. 회원가입, 이메일, 전화번호, 위치, 연락처, 사진 등은 <strong>수집하지 않습니다.</strong></p>
 <table>
 <tr><th>항목</th><th>내용</th><th>수집 방식</th></tr>
 <tr><td>기기 식별자</td><td>앱이 처음 실행될 때 기기 안에서 무작위로 생성하는 문자열입니다. 이름·이메일·전화번호·광고 ID 등 개인을 특정하는 정보와 연결되지 않으며, 같은 기기의 기록을 하나로 묶는 데만 쓰입니다.</td><td>앱 실행 시 자동 생성</td></tr>
-<tr><td>별명</td><td>이용자가 던전 갤러리에서 직접 입력한 유저명(최대 16자). 지하 200층을 정복해 순번을 등록할 때 함께 저장됩니다. 입력하지 않으면 저장되지 않습니다.</td><td>이용자 직접 입력(선택)</td></tr>
+<tr><td>별명</td><td>이용자가 던전 갤러리에서 직접 입력한 유저명(최대 16자). 지하 200층을 정복해 순번을 등록할 때, 그리고 던전을 공개할 때 함께 저장됩니다. 입력하지 않으면 저장되지 않습니다.</td><td>이용자 직접 입력(선택)</td></tr>
 <tr><td>게임 기록</td><td>던전 추격에서 클리어한 층 번호, 획득한 별 수, 이동 수, 기록 시각. 지하 200층 정복 시각과 등록 순번.</td><td>층 클리어 시 자동</td></tr>
+<tr><td>공개 던전 (이용자 제작 콘텐츠)</td><td>이용자가 던전 갤러리에 공개하기를 선택한 던전의 구성(판 정보가 담긴 던전 코드), 던전 이름(최대 20자), 기준 난이도, 테스트 클리어 이동 수, 공개 시각, 약관 동의 시각.</td><td>이용자가 "갤러리에 공개"를 누를 때(선택)</td></tr>
+<tr><td>공개 던전 활동 기록</td><td>공개 던전에 대한 플레이·클리어·추천·난이도 평가(1~5) 기록. 기기당 던전당 1회만 집계하기 위해 기기 식별자와 함께 저장됩니다.</td><td>공개 던전 플레이·추천·평가 시 자동</td></tr>
+<tr><td>신고 기록</td><td>이용자가 공개 던전을 신고할 때의 신고 사유(선택지), 신고 시각, 신고한 기기의 식별자(중복 신고 방지용), 신고된 던전 정보.</td><td>이용자가 "신고"를 누를 때(선택)</td></tr>
 </table>
 <p>위 정보는 모두 <strong>선택적</strong>이며, 인터넷에 연결되지 않은 상태나 서버 연결이 실패한 경우에도 게임은 정상적으로 이용할 수 있습니다.</p>
 
 <h3>기기 내에만 저장되는 정보</h3>
-<p>층별 최고 기록과 진행도, 무한 추격 이어하기 데이터와 최고 점수, 내가 만든 던전과 클리어 기록, 유저명·아바타 설정, 언어·소리·진동 설정, 튜토리얼 완료 여부, 정복 기록은 이용자의 기기 내부 저장소(브라우저 localStorage)에만 저장되며 개발자 서버로 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
+<p>층별 최고 기록과 진행도, 무한 추격 이어하기 데이터와 최고 점수, 내가 만든 던전(공개하지 않은 것)과 클리어 기록, 유저명·아바타 설정, 언어·소리·진동 설정, 튜토리얼 완료 여부, 정복 기록, 내가 숨기거나 차단한 던전·제작자 목록은 이용자의 기기 내부 저장소(브라우저 localStorage)에만 저장되며 개발자 서버로 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
 
 <h2>2. 수집 목적</h2>
 <ul>
 <li>층별 별(★) 획득 분포를 집계해 층 화면에 표시(다른 이용자와 비교)</li>
 <li>지하 200층 정복자에게 등록 순번("N번째 정복자") 부여</li>
 <li>동일 기기의 기록을 층당 1건으로 관리</li>
+<li>이용자가 공개한 던전을 다른 이용자에게 표시하고, 플레이·클리어·추천·난이도 평가 수를 집계해 표시</li>
+<li>공개 자격(지하 100층 클리어) 및 기기당 공개 한도(5개) 확인</li>
+<li>신고된 던전의 검토·숨김 등 이용약관 위반에 대한 조치, 반복 위반 기기의 공개 기능 제한</li>
 </ul>
 <p>수집한 정보를 광고, 마케팅, 프로필 분석 등 위 목적 외의 용도로 사용하지 않습니다.</p>
 
@@ -46,7 +52,12 @@
 <p>모든 데이터는 <strong>HTTPS로 암호화되어 전송</strong>됩니다.</p>
 
 <h2>4. 제3자 제공 및 공유</h2>
-<p>개발자는 수집한 정보를 <strong>제3자에게 판매, 제공, 공유하지 않습니다.</strong> 다만 지하 200층 정복 순번과 별명은 이용자 본인의 정복 화면에 표시되며, 던전 갤러리에서 이용자가 직접 배포한 던전의 별명은 다른 이용자에게 공개적으로 표시됩니다. 기기 식별자는 화면에 표시되지 않습니다.</p>
+<p>개발자는 수집한 정보를 <strong>제3자에게 판매, 제공, 공유하지 않습니다.</strong> 다만 다음 정보는 서비스 특성상 다른 이용자에게 표시됩니다.</p>
+<ul>
+<li>지하 200층 정복 순번과 별명: 이용자 본인의 정복 화면에 표시</li>
+<li>이용자가 던전 갤러리에 <strong>공개하기를 선택한 던전</strong>: 던전 구성, 던전 이름, 제작자 유저명, 아바타, 기준 난이도, 공개일, 그리고 플레이·클리어·추천 수와 도전자 평가가 <strong>앱의 모든 이용자에게 표시</strong>됩니다.</li>
+</ul>
+<p>기기 식별자는 어떤 경우에도 화면에 표시되지 않습니다. 차단 기능을 위해 기기 식별자를 복원할 수 없도록 가공한 짧은 식별 값만 앱에 전달됩니다.</p>
 
 <h2>5. 광고</h2>
 <p>현재 앱은 <strong>광고를 표시하지 않으며</strong> 광고 식별자를 수집하지 않습니다. 향후 광고를 도입하는 경우 이 방침을 개정하고 앱과 스토어 페이지를 통해 고지합니다.</p>
@@ -54,13 +65,16 @@
 <h2>6. 보관 기간</h2>
 <ul>
 <li>층별 기록·정복 순번: 서비스 제공 기간 동안 보관합니다.</li>
+<li>공개 던전·활동 기록: 공개 중인 동안 보관하며, 이용자가 공개를 내리거나 이용약관의 목록 정리 규칙에 따라 목록에서 내려간 뒤에도 통계와 분쟁 대응을 위해 보관할 수 있습니다. 삭제 요청 시 삭제합니다.</li>
+<li>신고 기록: 조치 완료 후 1년간 보관 후 삭제합니다.</li>
 <li>이용자가 삭제를 요청한 경우: 요청 확인 후 지체 없이 삭제합니다.</li>
 <li>서비스 종료 시: 보관 중인 모든 데이터를 삭제합니다.</li>
 </ul>
 
 <h2>7. 데이터 삭제 요청</h2>
 <p><strong>삭제 요청 방법</strong></p>
-<p>아래 이메일로 <strong>사용 중인 별명</strong>(등록했다면)과 <strong>대략적인 마지막 플레이 시기</strong>를 알려주시면, 해당 기록(기기 식별자, 별명, 게임 기록, 정복 순번)을 서버에서 삭제합니다. 앱 자체를 삭제하실 필요는 없습니다.</p>
+<p>아래 이메일로 <strong>사용 중인 별명</strong>(등록했다면)과 <strong>대략적인 마지막 플레이 시기</strong>, 공개한 던전이 있다면 <strong>던전 이름</strong>을 알려주시면, 해당 기록(기기 식별자, 별명, 게임 기록, 정복 순번, 공개 던전과 활동 기록)을 서버에서 삭제합니다. 앱 자체를 삭제하실 필요는 없습니다.</p>
+<p>공개한 던전의 공개만 중단하려면 앱의 내 던전 카드에서 <strong>갤러리에서 내리기</strong>를 누르면 즉시 목록에서 제거됩니다.</p>
 <p>이메일: <a href="mailto:chaejs21@gmail.com">chaejs21@gmail.com</a></p>
 <p>기기 내에 저장된 정보는 앱을 삭제하거나 브라우저 데이터를 지우면 이용자가 직접 삭제할 수 있습니다.</p>
 
@@ -71,7 +85,8 @@
 <p>이용자는 언제든지 자신의 정보에 대한 열람·삭제를 요청할 수 있으며, 요청은 7항의 이메일로 접수합니다. 별명은 앱 안에서 직접 변경할 수 있습니다.</p>
 
 <h2>10. 방침의 변경</h2>
-<p>이 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 변경 시 이 페이지에 시행일과 함께 게시합니다.</p>
+<p>이 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 변경 시 이 페이지에 시행일과 함께 게시합니다. 던전 갤러리의 이용 조건(금지 콘텐츠, 신고·차단, 조치, 목록 정리)은 별도의 <a href="terms.html">이용약관</a>에서 정합니다.</p>
+<p>개정 이력: 2026-09-30 제정 · 2026-10-01 던전 갤러리 공개 기능(공개 던전, 활동 기록, 신고 기록) 반영</p>
 
 <h2>11. 문의</h2>
 <p>개발자: Chae Lab<br>이메일: <a href="mailto:chaejs21@gmail.com">chaejs21@gmail.com</a></p>
@@ -79,24 +94,30 @@
 <hr>
 
 <h1>BLOCK CHASE Privacy Policy</h1>
-<p class="meta">Developer: Chae Lab · Package: io.github.environe21_code.blockchase · Effective: September 30, 2026</p>
+<p class="meta">Developer: Chae Lab · Package: io.github.environe21_code.blockchase · Effective: October 1, 2026 (first published September 30, 2026; revised for the public Dungeon Gallery)</p>
 
 <h2>1. Information We Collect</h2>
-<p>The app collects only the following to provide per-floor difficulty statistics and the "Floor 200 conqueror" ranking number. We do <strong>not</strong> collect email, phone number, location, contacts, photos, or account credentials.</p>
+<p>The app collects only the following to provide per-floor difficulty statistics, the "Floor 200 conqueror" ranking number, and the <strong>Dungeon Gallery</strong> (where players publish dungeons they created for other players). We do <strong>not</strong> collect email, phone number, location, contacts, photos, or account credentials.</p>
 <table>
 <tr><th>Item</th><th>Details</th><th>How</th></tr>
 <tr><td>Device identifier</td><td>A random string generated on your device at first launch. Not linked to your name, email, phone number, or advertising ID; used only to group records from the same device.</td><td>Automatic on launch</td></tr>
-<tr><td>Nickname</td><td>The display name (up to 16 characters) you enter in the Dungeon Gallery. It is stored together with your conqueror registration when you clear floor 200. Nothing is stored if you don't enter one.</td><td>Optional, entered by you</td></tr>
+<tr><td>Nickname</td><td>The display name (up to 16 characters) you enter in the Dungeon Gallery. It is stored with your conqueror registration when you clear floor 200 and with any dungeon you publish. Nothing is stored if you don't enter one.</td><td>Optional, entered by you</td></tr>
 <tr><td>Game records</td><td>Cleared floor number, stars earned, move count and timestamp in Dungeon Chase; time and ranking number of your floor-200 conquest.</td><td>Automatic on floor clear</td></tr>
+<tr><td>Published dungeons (user-generated content)</td><td>For dungeons you choose to publish: the dungeon layout (as a dungeon code), dungeon name (up to 20 characters), base difficulty, test-clear move count, publish time and time of terms acceptance.</td><td>When you tap "Publish" (optional)</td></tr>
+<tr><td>Activity on published dungeons</td><td>Play, clear, recommendation and difficulty-rating (1–5) records for published dungeons, stored with your device identifier so each is counted once per device.</td><td>Automatic when you play, recommend or rate</td></tr>
+<tr><td>Reports</td><td>When you report a dungeon: the selected reason, time, your device identifier (to prevent duplicate reports) and the reported dungeon.</td><td>When you tap "Report" (optional)</td></tr>
 </table>
 <p>All of the above is <strong>optional</strong>. The game works fully offline or when the server is unavailable.</p>
-<p>Best records and progress, Endless Chase resume data and high scores, dungeons you created and their clear records, nickname and avatar settings, language/sound/vibration settings, tutorial status, and your conquest record are stored only on your device (browser localStorage) and are never sent to our servers. They are removed when you uninstall the app.</p>
+<p>Best records and progress, Endless Chase resume data and high scores, dungeons you created but did not publish and their clear records, nickname and avatar settings, language/sound/vibration settings, tutorial status, your conquest record, and the list of dungeons and creators you hid or blocked are stored only on your device (browser localStorage) and are never sent to our servers. They are removed when you uninstall the app.</p>
 
 <h2>2. Purpose</h2>
 <ul>
 <li>Aggregating star (★) distributions per floor and showing them on the floor screen</li>
 <li>Assigning a registration number ("Conqueror #N") to players who clear floor 200</li>
 <li>Keeping one record per floor per device</li>
+<li>Showing dungeons you published to other players and displaying aggregated play, clear, recommendation and rating counts</li>
+<li>Checking publishing eligibility (floor 100 cleared) and the per-device limit (5 public dungeons)</li>
+<li>Reviewing and hiding reported dungeons and restricting publishing for repeat violators, as described in the Terms of Use</li>
 </ul>
 <p>We do not use this data for advertising, marketing, or profiling.</p>
 
@@ -104,7 +125,12 @@
 <p>Data is stored in <strong>Google Apps Script and Google Sheets</strong>, operated by Google LLC as our data processor. Google's Privacy Policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>) also applies. All data is transmitted over <strong>HTTPS encryption</strong>.</p>
 
 <h2>4. Sharing</h2>
-<p>We do <strong>not</strong> sell, share, or transfer your data to third parties. Your conqueror number and nickname appear on your own conquest screen, and the nickname attached to dungeons you publish in the Dungeon Gallery is visible to other players. The device identifier is never displayed.</p>
+<p>We do <strong>not</strong> sell, share, or transfer your data to third parties. The following is displayed to other players as part of the service:</p>
+<ul>
+<li>Your conqueror number and nickname, on your own conquest screen</li>
+<li>Dungeons you <strong>choose to publish</strong>: layout, dungeon name, creator name, avatar, base difficulty, publish date, and aggregated play, clear, recommendation and rating counts are <strong>visible to all users of the app</strong>.</li>
+</ul>
+<p>The device identifier is never displayed. For the block feature the app receives only a short, non-reversible derived value, not the identifier itself.</p>
 
 <h2>5. Advertising</h2>
 <p>The app currently shows <strong>no ads</strong> and does not collect advertising identifiers. If ads are introduced, this policy will be updated and announced.</p>
@@ -112,12 +138,15 @@
 <h2>6. Retention</h2>
 <ul>
 <li>Floor records and conqueror numbers are kept while the service operates.</li>
+<li>Published dungeons and activity records are kept while public, and may be retained for statistics and dispute handling after you unpublish or the list-maintenance rule removes them. They are deleted on request.</li>
+<li>Reports are kept for one year after the case is closed.</li>
 <li>Records are deleted promptly upon a verified deletion request.</li>
 <li>All data is deleted if the service is discontinued.</li>
 </ul>
 
 <h2>7. Data Deletion Requests</h2>
-<p>Email <a href="mailto:chaejs21@gmail.com">chaejs21@gmail.com</a> with your <strong>nickname</strong> (if registered) and <strong>approximate last play date</strong>. We will delete the matching device identifier, nickname, game records, and conqueror number from the server. You do not need to uninstall the app.</p>
+<p>Email <a href="mailto:chaejs21@gmail.com">chaejs21@gmail.com</a> with your <strong>nickname</strong> (if registered), <strong>approximate last play date</strong> and, if you published dungeons, their <strong>names</strong>. We will delete the matching device identifier, nickname, game records, conqueror number, published dungeons and activity records from the server. You do not need to uninstall the app.</p>
+<p>To only stop publishing a dungeon, tap <strong>Unpublish</strong> on your dungeon card in the app; it is removed from the list immediately.</p>
 <p>On-device data can be removed by uninstalling the app or clearing browser data.</p>
 
 <h2>8. Children</h2>
@@ -127,7 +156,8 @@
 <p>You may request access to or deletion of your data at any time via the email above. Your nickname can be changed directly in the app.</p>
 
 <h2>10. Changes</h2>
-<p>This policy may be updated for legal or service reasons. Changes will be posted on this page with a new effective date.</p>
+<p>This policy may be updated for legal or service reasons. Changes will be posted on this page with a new effective date. Rules for the Dungeon Gallery (prohibited content, reporting, blocking, enforcement, list maintenance) are set out in the separate <a href="terms.html">Terms of Use</a>.</p>
+<p>History: 2026-09-30 first version · 2026-10-01 revised for the public Dungeon Gallery (published dungeons, activity records, reports)</p>
 
 <h2>11. Contact</h2>
 <p>Chae Lab · <a href="mailto:chaejs21@gmail.com">chaejs21@gmail.com</a></p>
