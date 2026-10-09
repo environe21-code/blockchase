@@ -1,9 +1,13 @@
-# BLOCK CHASE deploy folder
+# BLOCK CHASE (블록체이스)
 
-- index.html : game (v14.51)
-- manifest.json / sw.js / icons/ : PWA files
-- privacy.html : privacy policy (fill email & date)
-- .well-known/assetlinks.json : TWA asset links (fill package name + 2 SHA-256)
-- .nojekyll : required so GitHub Pages serves .well-known (do not delete)
+Mobile puzzle game by **Chae Lab**. Official app: Google Play — "블록 체이스 (BLOCK CHASE)" (`io.github.environe21_code.blockchase`).
 
-Upload everything in this folder to the ROOT of your GitHub repository.
+This repository exists only to host the game via GitHub Pages.
+**All rights reserved. This is not open-source software.** See [LICENSE](LICENSE).
+
+- Play: https://environe21-code.github.io/blockchase/
+- Privacy Policy: https://environe21-code.github.io/blockchase/privacy.html
+- Terms of Use: https://environe21-code.github.io/blockchase/terms.html
+- Contact: chaejs21@gmail.com
+
+© 2026 Chae Lab (J.S. Chae)
