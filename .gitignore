@@ -2,3 +2,4 @@ _notes/
 node_modules/
 test-results/
 *.test.html
+test.html
