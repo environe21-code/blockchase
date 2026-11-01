@@ -1,3 +1,4 @@
+답변은 항상 한국어로.
 # BLOCK CHASE (블록체이스) — Claude Code 작업 규칙
 
 이 저장소는 Google Play 앱 "블록 체이스 (BLOCK CHASE)"의 **라이브 서비스 파일**입니다.
