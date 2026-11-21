@@ -3,3 +3,11 @@ node_modules/
 test-results/
 *.test.html
 test.html
+
+# 서명 키·빌드 산출물 — 절대 커밋 금지
+Google Play package/
+*.keystore
+*.jks
+signing-key-info.txt
+*.aab
+*.apk
