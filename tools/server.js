@@ -3,6 +3,8 @@
 //   node tools/server.js summary            시트별 행 수 등 요약(관리자 조회)
 //   node tools/server.js floors             층별 기기 수·별 분포·최소 수
 //   node tools/server.js gallery            공개 던전 목록(상태·신고 수)
+//   node tools/server.js rankdel "이름" [층]   랭킹(scores)에서 그 이름(과 층)의 행 삭제 — 시험 데이터 정리용, 실행 전 사용자 확인
+//   node tools/server.js userdel <번호>        자동 유저명 번호(users) 행 삭제 — 시험으로 소모된 번호 정리용
 //   node tools/server.js deploy "설명"       _notes/server/Code.js 를 올리고 기존 배포를 새 버전으로 갱신
 // 서버 소스: _notes/server/Code.js (clasp 프로젝트, .gitignore 대상). 관리자 키: _notes/server/.admin_key
 // 배포 주소는 bc_config.json 의 statsUrl 에서 읽으며 절대 바꾸지 않는다(같은 배포 ID에 새 버전).
@@ -53,6 +55,12 @@ const main = async () => {
     const a = await admin("gallery"); if (a.ok !== 1) { console.log(JSON.stringify(a)); process.exit(1); }
     for (const l of a.levels) console.log(l.status.padEnd(8), l.id, "신고", l.reports, "플레이", l.plays, "추천", l.likes, "|", l.name, "/", l.author);
     console.log("총", a.levels.length, "개"); return;
+  }
+  if (cmd === "rankdel" || cmd === "userdel") {
+    const key = fs.readFileSync(path.join(sdir, ".admin_key"), "utf8").trim(), v = process.argv[3];
+    if (!v) { console.error("대상이 필요합니다"); process.exit(1); }
+    const body = cmd === "rankdel" ? { key, q: "rankdel", name: v, ...(process.argv[4] ? { floor: Number(process.argv[4]) } : {}) } : { key, q: "userdel", n: Number(v) };
+    const r = await post({ admin: body }); console.log(JSON.stringify(r)); process.exit(r.ok === 1 ? 0 : 1);
   }
   if (cmd === "deploy") {
     const desc = process.argv[3]; if (!desc) { console.error('설명이 필요합니다: node tools/server.js deploy "v3.5 관리자 조회"'); process.exit(1); }

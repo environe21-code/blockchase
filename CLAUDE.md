@@ -41,6 +41,8 @@
 - `node tools/server.js check` — 서버 응답·버전 확인(데이터 변경 없음). 서버를 건드린 뒤와 앱 푸시 전에 실행.
 - `node tools/server.js summary | floors [all] | gallery` — 시트 요약 / 층별 기기 수·별 분포·클리어 수 / 던전 목록. 읽기 전용이며 응답에 기기 ID가 없다.
 - `node tools/server.js deploy "설명"` — 문법 검사 → `clasp push` → **같은 배포 ID에 새 버전**(주소 불변) → check. 실행 전 사용자에게 한 번 확인받는다.
+- `node tools/server.js rankdel "이름" [층]` / `userdel <번호>` — 랭킹 행·자동 유저명 번호 행 삭제(시험 데이터 정리용). 실제 데이터를 지우는 조치이므로 대상과 함께 사용자에게 확인받은 뒤 실행.
+- **시험 앱·시험 페이지가 실제 서버에 기록을 보내지 않게 할 것**(v17.64 시험 때 가짜 기록이 실제 랭킹 1위에 올라감). 로컬 시험 서버는 `bc_config.json`에 빈 `statsUrl`을 돌려주게 한다.
 - 서버를 수정하면 `_notes/BLOCK_CHASE_stats_AppsScript_vX_Y.gs` 사본을 남기고, 모의 시트 시험(doPost를 node vm으로 실행) 후 배포한다.
 - `_notes/server/.admin_key`(관리자 조회 키)는 출력·커밋·전송 금지. 서버 코드에는 SHA-256 해시만 둔다.
 - 유저 번호 발급(`uname`)은 호출할 때마다 번호가 소모되므로 시험 삼아 호출하지 않는다.
